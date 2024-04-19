@@ -13,6 +13,17 @@ describe('FixProblemsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ FixProblemsComponent ],
+      providers: [
+        {
+          provide: MAT_DIALOG_DATA,
+          useValue:{}
+        }
+      ],
+      imports:[
+        MatDialogModule,
+        ReactiveFormsModule,
+        FormsModule
+      ]
     })
     .compileComponents();
 
